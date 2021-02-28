@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VYNYL Challenge</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="welcome">Welcome!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
