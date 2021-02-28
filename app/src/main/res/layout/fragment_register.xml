@@ -12,17 +12,27 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".SignInFragment">
+        tools:context=".RegisterFragment">
 
 
         <TextView
-            android:id="@+id/signInText"
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:layout_margin="15sp"
             android:gravity="center"
-            android:text="Sign In"
+            android:text="Register"
             android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:layout_margin="15sp"/>
 
         <EditText
             android:id="@+id/username"
@@ -45,18 +55,19 @@
             android:layout_margin="15sp"/>
 
         <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_margin="15sp"/>
+
+        <Button
             android:id="@+id/signIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign In"
             android:layout_margin="15sp"/>
 
-        <Button
-            android:id="@+id/register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Register"
-            android:layout_margin="15sp"/>
 
 
     </LinearLayout>
