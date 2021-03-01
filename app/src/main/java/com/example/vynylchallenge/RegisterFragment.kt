@@ -6,23 +6,34 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.vynylchallenge.databinding.FragmentRegisterBinding
+import com.example.vynylchallenge.viewmodel.UserViewModel
 
 class RegisterFragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    lateinit var viewModel: UserViewModel
 
-        val binding = DataBindingUtil.inflate<FragmentRegisterBinding>(inflater,
-            R.layout.fragment_register,container,false)
+    override fun onCreateView(
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?): View? {
 
-        binding.register.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_registerFragment_to_mainScreenFragment)
+        val binding = DataBindingUtil.inflate<FragmentRegisterBinding>(
+                inflater, R.layout.fragment_register, container, false
+        )
+
+        viewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+
+        binding.register.setOnClickListener @Suppress("UNUSED_ANONYMOUS_PARAMETER") {
+            if(viewModel.handleRegister(binding)){
+                view?.findNavController()?.navigate(R.id.action_registerFragment_to_mainScreenFragment)
+            }
         }
 
-        binding.signIn.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_registerFragment_to_signInFragment)
+        binding.signIn.setOnClickListener {
+            viewModel.resetRegisterInput(binding)
+            view?.findNavController()?.navigate(R.id.action_registerFragment_to_signInFragment)
         }
 
         return binding.root

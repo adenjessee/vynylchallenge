@@ -13,8 +13,6 @@
         android:orientation="vertical"
         tools:context=".MainScreenFragment">
 
-
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,6 +31,13 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:text="You are now signed in" />
+
+        <TextView
+            android:id="@+id/usernameDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="" />
 
     </LinearLayout>
 </layout>
