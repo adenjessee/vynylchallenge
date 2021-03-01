@@ -1,4 +1,4 @@
-package com.example.vynylchallenge
+package com.example.vynylchallenge.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.example.vynylchallenge.R
 import com.example.vynylchallenge.databinding.FragmentRegisterBinding
 import com.example.vynylchallenge.viewmodel.UserViewModel
 

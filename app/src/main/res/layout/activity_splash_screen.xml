@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SplashScreenActivity"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/splash_icon"
+            />
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="30sp"
+            android:indeterminate="true"
+            android:indeterminateTint="#0000CC">
+
+        </ProgressBar>
+
+    </LinearLayout>
+</layout>

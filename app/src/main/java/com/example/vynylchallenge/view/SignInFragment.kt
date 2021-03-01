@@ -1,4 +1,4 @@
-package com.example.vynylchallenge
+package com.example.vynylchallenge.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
+import com.example.vynylchallenge.R
 import com.example.vynylchallenge.databinding.FragmentSignInBinding
 import com.example.vynylchallenge.viewmodel.UserViewModel
 

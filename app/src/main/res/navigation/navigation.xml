@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/splashScreenFragment">
+    app:startDestination="@id/welcomeFragment">
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.vynylchallenge.WelcomeFragment"
+        android:name="com.example.vynylchallenge.view.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
@@ -17,18 +17,8 @@
             app:destination="@id/registerFragment" />
     </fragment>
     <fragment
-        android:id="@+id/splashScreenFragment"
-        android:name="com.example.vynylchallenge.SplashScreenFragment"
-        android:label="SplashScreenFragment"
-        tools:layout="@layout/fragment_splash_screen">
-        <action
-            android:id="@+id/action_splashScreenFragment_to_welcomeFragment"
-            app:destination="@id/welcomeFragment"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.vynylchallenge.SignInFragment"
+        android:name="com.example.vynylchallenge.view.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
@@ -40,12 +30,12 @@
     </fragment>
     <fragment
         android:id="@+id/mainScreenFragment"
-        android:name="com.example.vynylchallenge.MainScreenFragment"
+        android:name="com.example.vynylchallenge.view.MainScreenFragment"
         android:label="fragment_main_screen"
         tools:layout="@layout/fragment_main_screen" />
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.vynylchallenge.RegisterFragment"
+        android:name="com.example.vynylchallenge.view.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action
