@@ -13,12 +13,10 @@
         android:orientation="vertical"
         tools:context=".view.MainScreenFragment">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="50sp"
-            android:layout_marginBottom="30sp"
-            android:text="Main Screen" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230sp"
+            android:src="@drawable/landing"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,13 +28,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:text="You are now signed in" />
+            android:text="You are now signed in as" />
 
         <TextView
             android:id="@+id/usernameDisplay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
+            android:textStyle="bold"
             android:text="" />
 
     </LinearLayout>

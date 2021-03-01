@@ -25,7 +25,7 @@ class MainScreenFragment : Fragment() {
 
         viewModel = ViewModelProvider(this).get(UserViewModel::class.java)
 
-        binding.usernameDisplay.text = "as " + viewModel.getUsername()
+        binding.usernameDisplay.text = viewModel.getUsername()
 
         return binding.root
     }

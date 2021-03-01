@@ -15,14 +15,10 @@
         tools:context=".view.SignInFragment">
 
 
-        <TextView
-            android:id="@+id/signInText"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:layout_margin="15sp"
-            android:gravity="center"
-            android:text="Sign In"
-            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="250sp"
+            android:layout_height="150sp"
+            android:src="@drawable/sign_in"/>
 
         <EditText
             android:id="@+id/username"

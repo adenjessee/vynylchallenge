@@ -14,15 +14,10 @@
         android:orientation="vertical"
         tools:context=".view.RegisterFragment">
 
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:layout_margin="15sp"
-            android:gravity="center"
-            android:text="Register"
-            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="250sp"
+            android:layout_height="150sp"
+            android:src="@drawable/register"/>
 
         <EditText
             android:id="@+id/name"
