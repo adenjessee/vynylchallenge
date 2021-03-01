@@ -1,15 +1,19 @@
 package com.example.vynylchallenge.view
 
+import android.app.AlertDialog
+import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.vynylchallenge.R
 import com.example.vynylchallenge.databinding.FragmentMainScreenBinding
 import com.example.vynylchallenge.viewmodel.UserViewModel
+
 
 class MainScreenFragment : Fragment() {
 
@@ -20,8 +24,10 @@ class MainScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        var binding = DataBindingUtil.inflate<FragmentMainScreenBinding>(inflater,
-            R.layout.fragment_main_screen,container,false)
+        var binding = DataBindingUtil.inflate<FragmentMainScreenBinding>(
+            inflater,
+            R.layout.fragment_main_screen, container, false
+        )
 
         viewModel = ViewModelProvider(this).get(UserViewModel::class.java)
 

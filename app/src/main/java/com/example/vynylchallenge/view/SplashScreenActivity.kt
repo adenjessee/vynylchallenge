@@ -1,11 +1,11 @@
 package com.example.vynylchallenge.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import androidx.appcompat.app.AppCompatActivity
 import com.example.vynylchallenge.R
 import com.example.vynylchallenge.databinding.ActivitySplashScreenBinding
 
